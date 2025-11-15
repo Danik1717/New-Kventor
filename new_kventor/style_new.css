@@ -1,0 +1,244 @@
+/* === ОСНОВНЫЕ ПЕРЕМЕННЫЕ === */
+:root {
+    --primary-bg: #ffebf3;
+    --secondary-bg: #e3fdf5;
+    --text-color: #5a5a5a;
+    --accent-color: #ff85a2;
+    --accent-secondary: #a6e3e9;
+    --header-color: #333;
+    --card-bg: rgba(255, 255, 255, 0.9);
+    --border-color: #ffc2d6;
+}
+
+/* === БАЗОВЫЕ СТИЛИ === */
+body {
+    background: linear-gradient(135deg, var(--primary-bg) 0%, var(--secondary-bg) 100%);
+    color: var(--text-color);
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+#container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* === ШАПКА === */
+#header {
+    text-align: center;
+    margin-bottom: 30px;
+    
+}
+
+#header h1 {
+    color: var(--header-color);
+    margin: 0;
+    font-size: 2.5em;
+}
+
+#header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.description {
+    font-style: italic;
+    margin: 10px 0 0 0;
+    font-size: 1.2em;
+}
+
+#nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 40px 0;
+    flex-wrap: wrap;
+}
+
+#nav a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    background: var(--card-bg);
+    border: 2px solid transparent;
+}
+
+#nav a:hover {
+    background-color: var(--accent-color);
+    color: white;
+    border-color: var(--accent-color);
+    transform: translateY(-2px);
+}
+
+#nav a.current {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+/* === ОСНОВНОЙ КОНТЕНТ === */
+#text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background: var(--card-bg);
+    padding: 40px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    
+}
+
+
+.img-flex-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.img1, .img2 {
+    flex: 0 0 auto;
+    max-width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.text-content {
+    flex: 1 1 auto;
+    border:3px solid #333;
+    margin-top: 0px;
+}
+
+.text-content p {
+    margin: 0 0 15px 0;
+    font-size: 1.3em;
+}
+
+.text-content h3 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.no_padding {
+    padding-bottom: 20px;
+}
+
+.venzel {
+    display: block;
+    margin: 20px auto;
+    max-width: 300px;
+    opacity: 0.8;
+}
+
+.line {
+    display: block;
+    margin: 40px auto 20px;
+    width: 80%;
+    max-width: 600px;
+}
+
+#members {
+    background: linear-gradient(135deg, var(--accent-secondary) 0%, #c7ecee 100%);
+    padding: 25px;
+    border-radius: 15px;
+    margin: 30px 0;
+}
+
+#members h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--header-color);
+}
+
+#members ol {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+}
+
+#members li {
+    background: var(--card-bg);
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: transform 0.3s ease;
+}
+
+#members li:hover {
+    transform: scale(1.05);
+}
+
+#members a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* === НОВОСТИ === */
+#news {
+    background: var(--card-bg);
+    padding: 35px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+#news h3 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: var(--header-color);
+    font-size: 1.5em;
+}
+
+#news ul {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 0;
+    list-style: none;
+}
+
+#news li {
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 12px;
+    border-left: 5px solid var(--accent-color);
+    transition: transform 0.3s ease;
+}
+
+#news li:hover {
+    transform: translateX(5px);
+}
+
+/* === ПОДВАЛ === */
+#footer {
+    text-align: center;
+    padding: 30px 20px;
+    border-top: 3px solid var(--border-color);
+    margin-top: 40px;
+}
+
+#footer p {
+    margin: 10px 0;
+    line-height: 1.8;
+}
+
+#footer a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.clearfloat {
+    clear: both;
+}
+
